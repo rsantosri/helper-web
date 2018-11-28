@@ -2,16 +2,16 @@ const mongoose = require('mongoose');
 const Esquema = mongoose.Schema;
 
 const proveedorEsquema = new Esquema({
-    id: String,
-    idCliente: String,
-    idProveedor: String,
-    fechaOrden: Date,
-    fechaServicio: Date,
-    costo: Number,
-    completado: {
-        type: Boolean,
-        default: false
-    }
+    idUsuario: String,
+    idCategoria: String,
+    descripcion: String,
+    costoPromedio: Number,
+    oferta:[{
+        nombre: String,
+        imagen: String,
+        costo: Number
+    }],
+    imagen: String
 });
 
-module.exports = mongoose.model('servicios', proveedorEsquema);
+module.exports = mongoose.model('proveedores', proveedorEsquema);
