@@ -1,0 +1,11 @@
+{
+  "name": "proyectoopta3",
+  "version": "0.0.1",
+  "description": "Proyecto de Opta 3 con MEAN. (Helper Web)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MARJ",
+  "license": "ISC"
+}
